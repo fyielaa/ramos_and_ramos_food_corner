@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ed1683">
+  <title>Ramos & Ramos Food Corner</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  GOOD FOOD, GOOD MOOD! · RAMOS & RAMOS FOOD CORNER
+</div>
+
+<header class="header">
+  <nav class="nav">
+    <a class="brand" href="#home">
+      <img src="assets/logo.jpg" alt="Food Corner Logo">
+      <span>Ramos & Ramos
+        <small>FOOD CORNER</small>
+      </span>
+    </a>
+
+    <div class="navlinks">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#story">Our Story</a>
+      <a href="#how-to-order">How to Order</a>
+      <a href="#location">Location</a>
+    </div>
+
+    <button class="cart-button" id="openCart">
+      🛍️ Cart <span id="cartCount">0</span>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow">Your happy food stop</span>
+
+      <h1>Cravings?<br><span>We got you!</span></h1>
+
+      <p>
+        From cheesy takoyaki and flavorful wings
+        to iced coffee and milk tea, find your
+        next favorite bite at Ramos & Ramos
+        Food Corner.
+      </p>
+
+      <div class="hero-actions">
+        <a class="primary" href="#menu">Explore the Menu →</a>
+        <a class="outline" href="#how-to-order">How to Order</a>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <img src="assets/logo.jpg" alt="Ramos & Ramos Logo">
+    </div>
+  </div>
+</section>
+
+<div class="quickfacts">
+  <div class="fact">
+    <span class="emoji">🍡</span>
+    <div>
+      <strong>Crave-worthy favorites</strong>
+      <small>Takoyaki, wings, meals and more</small>
+    </div>
+  </div>
+
+  <div class="fact">
+    <span class="emoji">🧋</span>
+    <div>
+      <strong>Drinks for every mood</strong>
+      <small>Iced coffee, milk tea and frappes</small>
+    </div>
+  </div>
+
+  <div class="fact">
+    <span class="emoji">📍</span>
+    <div>
+      <strong>Paracale, Camarines Norte</strong>
+      <small>Find our location below</small>
+    </div>
+  </div>
+</div>
+
+<section class="content" id="menu">
+  <div class="section-head">
+    <span class="kicker">Something delicious awaits</span>
+    <h2>What's on the menu?</h2>
+    <p>
+      Browse our menu, check the prices,
+      and add your favorites to your cart.
+    </p>
+  </div>
+
+  <div class="category-row" id="categoryRow">
+    <button class="chip active" data-category="All">All Favorites</button>
+    <button class="chip" data-category="Takoyaki">Takoyaki</button>
+    <button class="chip" data-category="Meals">Rice Meals</button>
+    <button class="chip" data-category="Wings">Chicken Wings</button>
+    <button class="chip" data-category="Burgers">Burgers</button>
+    <button class="chip" data-category="Snacks">Finger Foods</button>
+    <button class="chip" data-category="Drinks">Drinks</button>
+  </div>
+
+  <div class="menu-grid" id="menuGrid"></div>
+
+  <div class="menu-note">
+    Prices and product availability should be
+    confirmed with the store before ordering.
+  </div>
+</section>
+
+<section class="content" id="story">
+  <div class="story">
+    <div class="story-image">
+      <img src="assets/takoyaki-coffee-menu.jpg"
+           alt="Food Corner Menu">
+    </div>
+
+    <div class="story-copy">
+      <span class="eyebrow">Our Story</span>
+      <h2>A little pink, a lot of flavor.</h2>
+
+      <p>
+        Ramos & Ramos Food Corner is a local
+        food business in Paracale, Camarines Norte,
+        serving satisfying snacks, rice meals,
+        burgers, refreshing drinks, and sweet treats.
+      </p>
+
+      <p>
+        Whether you're looking for a quick merienda,
+        a filling meal, or a drink to brighten your day,
+        there's something on our menu for your cravings.
+      </p>
+
+      <div class="pill-list">
+        <span>Made for cravings</span>
+        <span>Snacks & Meals</span>
+        <span>Drinks & Desserts</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content" id="how-to-order">
+  <div class="section-head">
+    <span class="kicker">Easy as 1, 2, 3, 4</span>
+    <h2>How to Order</h2>
+    <p>Follow these simple steps to prepare your order.</p>
+  </div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-number">1</div>
+      <h3>Choose your favorites</h3>
+      <p>Browse the menu and add your favorite items.</p>
+    </div>
+
+    <div class="step">
+      <div class="step-number">2</div>
+      <h3>Review your cart</h3>
+      <p>Adjust quantities and check your subtotal.</p>
+    </div>
+
+    <div class="step">
+      <div class="step-number">3</div>
+      <h3>Enter your details</h3>
+      <p>Provide your name, contact number, and address.</p>
+    </div>
+
+    <div class="step">
+      <div class="step-number">4</div>
+      <h3>Confirm your order</h3>
+      <p>Review your order summary before sending it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="content" id="payments">
+  <div class="section-head">
+    <span class="kicker">Pay your way</span>
+    <h2>Payment Methods</h2>
+  </div>
+
+  <div class="payment-grid">
+    <div class="payment">
+      <div class="pay-icon">COD</div>
+      <h3>Cash on Delivery</h3>
+      <p>Pay when your order arrives.</p>
+    </div>
+
+    <div class="payment">
+      <div class="pay-icon">G</div>
+      <h3>GCash</h3>
+      <p>Digital wallet payment.</p>
+    </div>
+
+    <div class="payment">
+      <div class="pay-icon">BDO</div>
+      <h3>BDO</h3>
+      <p>Bank transfer.</p>
+    </div>
+
+    <div class="payment">
+      <div class="pay-icon">M</div>
+      <h3>Maya</h3>
+      <p>Digital wallet payment.</p>
+    </div>
+  </div>
+
+  <p class="notice">
+    Confirm official payment details with the store.
+  </p>
+</section>
+
+<section class="content" id="location">
+  <div class="section-head">
+    <span class="kicker">Come say hello</span>
+    <h2>Find Us in Paracale</h2>
+    <p>Paracale, Camarines Norte, Philippines.</p>
+  </div>
+
+  <div class="location-grid">
+    <div class="location-card">
+      <h3>Ramos & Ramos Food Corner</h3>
+      <p>📍 Paracale, Camarines Norte, Philippines</p>
+
+      <a class="primary"
+         target="_blank"
+         rel="noopener"
+         href="https://www.google.com/maps/search/?api=1&query=Ramos+%26+Ramos+Food+Corner+Paracale+Camarines+Norte">
+        Open in Google Maps ↗
+      </a>
+    </div>
+
+    <iframe class="map-frame"
+      title="Map of Paracale"
+      loading="lazy"
+      src="https://maps.google.com/maps?q=Paracale%2C%20Camarines%20Norte%2C%20Philippines&z=13&output=embed">
+    </iframe>
+  </div>
+</section>
+
+<section class="content">
+  <div class="cta">
+    <div>
+      <h2>Ready for something yummy?</h2>
+      <p>Pick your favorites and prepare your order.</p>
+    </div>
+
+    <button class="outline" id="ctaMenu">
+      Start Your Order →
+    </button>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">
+        <img src="assets/logo.jpg" alt="Logo">
+        <span>Ramos & Ramos Food Corner</span>
+      </div>
+      <p>Good food, good mood. Proudly local in Paracale.</p>
+    </div>
+
+    <p>
+      © <span id="year"></span> Ramos & Ramos Food Corner
+    </p>
+  </div>
+</footer>
+
+<!-- CART -->
+<div class="overlay" id="overlay"></div>
+
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-head">
+    <h2>Your Cart 🛍️</h2>
+    <button class="icon-btn" id="closeCart">×</button>
+  </div>
+
+  <div class="cart-items" id="cartItems"></div>
+
+  <div class="cart-bottom">
+    <div class="total-line">
+      <span>Subtotal</span>
+      <strong id="subtotal">₱0.00</strong>
+    </div>
+
+    <div class="total-line">
+      <span>Delivery fee</span>
+      <span>To be confirmed</span>
+    </div>
+
+    <div class="total-line grand">
+      <span>Estimated total</span>
+      <span id="grandTotal">₱0.00</span>
+    </div>
+
+    <button class="primary" id="checkoutButton">
+      Continue to Checkout
+    </button>
+  </div>
+</aside>
+
+<!-- CHECKOUT -->
+<div class="checkout" id="checkoutModal">
+  <div class="checkout-panel">
+    <div class="checkout-head">
+      <h2>Order Details</h2>
+      <button class="icon-btn" id="closeCheckout">×</button>
+    </div>
+
+    <form id="checkoutForm">
+      <div class="form-grid">
+
+        <div class="field">
+          <label for="customerName">Full Name *</label>
+          <input id="customerName" required>
+        </div>
+
+        <div class="field">
+          <label for="customerPhone">Contact Number *</label>
+          <input id="customerPhone" type="tel" required>
+        </div>
+
+        <div class="field full">
+          <label for="customerAddress">Delivery Address *</label>
+          <textarea id="customerAddress" required></textarea>
+        </div>
+
+        <div class="field">
+          <label for="paymentMethod">Payment Method *</label>
+          <select id="paymentMethod" required>
+            <option value="">Select Method</option>
+            <option>Cash on Delivery</option>
+            <option>GCash</option>
+            <option>BDO Bank Transfer</option>
+            <option>Maya</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="orderType">Order Type</label>
+          <select id="orderType">
+            <option>Delivery</option>
+            <option>Pickup</option>
+          </select>
+        </div>
+
+        <div class="field full">
+          <label for="orderNotes">Additional Notes</label>
+          <textarea id="orderNotes"></textarea>
+        </div>
+
+      </div>
+
+      <div class="checkout-summary" id="checkoutSummary">
+        Your cart is empty.
+      </div>
+
+      <p class="notice">
+        Demo checkout only. This form prepares an order summary
+        but does not send orders or process payments.
+      </p>
+
+      <button class="primary submit-btn" type="submit">
+        Prepare Order Summary
+      </button>
+    </form>
+
+    <div id="orderResult" hidden>
+      <h3>Order Summary Ready!</h3>
+      <textarea id="orderText" readonly></textarea>
+      <button class="primary submit-btn" id="copyOrder" type="button">
+        Copy Order Summary
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
